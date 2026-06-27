@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon | Advanced Systems & Technologies LLC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Signature: Technical grid pattern behind company name */
+        .grid-signature {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .grid-signature::before {
+            content: '';
+            position: absolute;
+            inset: -20px;
+            background-image: 
+                linear-gradient(90deg, rgba(59, 130, 246, 0.08) 1px, transparent 1px),
+                linear-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+            background-size: 40px 40px;
+            border-radius: 8px;
+            z-index: -1;
+        }
+        
+        /* Divider line - structure as information */
+        .divider-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.3), transparent);
+        }
+        
+        /* Amber accent glow */
+        .amber-glow {
+            box-shadow: 0 0 20px rgba(217, 119, 6, 0.2);
+        }
+        
+        /* Service pillar hover effect */
+        .service-pillar {
+            transition: all 300ms ease;
+        }
+        
+        .service-pillar:hover {
+            transform: translateY(-4px);
+            border-color: rgb(59, 130, 246);
+            background: rgba(15, 23, 42, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-center items-center px-6 overflow-hidden">
+    <!-- Background Decoration (subtle technical feel) -->
+    <div class="absolute inset-0 z-0 opacity-20">
+        <div class="absolute top-[-10%] left-[-10%] w-96 h-96 bg-blue-600 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-[-10%] right-[-10%] w-96 h-96 bg-amber-600 rounded-full blur-[120px]"></div>
+    </div>
+
+    <main class="relative z-10 max-w-4xl w-full">
+        <!-- Header Section with Grid Signature -->
+        <div class="text-center mb-20">
+            <!-- Company Name with Grid Signature (distinctive element) -->
+            <div class="grid-signature mb-6">
+                <h1 class="text-6xl md:text-8xl font-black tracking-tighter text-white">
+                    Advanced Systems
+                </h1>
+            </div>
+            
+            <!-- Tagline with Amber Accent -->
+            <p class="text-3xl md:text-4xl font-light text-slate-200 mb-2">
+                <span>&</span> <span class="text-amber-400 font-semibold">Technologies</span> <span>LLC</span>
+            </p>
+            
+            <!-- Divider Line (structure) -->
+            <div class="divider-line w-32 mx-auto my-8"></div>
+            
+            <!-- Subheading - Technical, Precise -->
+            <p class="text-base md:text-lg text-slate-400 font-medium tracking-wide uppercase">
+                Industrial Equipment Supply &<br/>Technical Services
+            </p>
+        </div>
+
+        <!-- Coming Soon Status - Enhanced -->
+        <div class="flex justify-center mb-20">
+            <div class="inline-flex items-center gap-3 px-6 py-3 rounded-lg border border-amber-500/40 bg-gradient-to-r from-amber-500/20 to-amber-400/10 amber-glow backdrop-blur-sm">
+                <div class="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
+                <p class="text-sm md:text-base text-amber-300 font-bold uppercase tracking-widest">Status: Coming Soon</p>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider-line w-24 mx-auto mb-16"></div>
+
+        <!-- Contact Section - Prominent & Clear -->
+        <div class="text-center mb-20">
+            <p class="text-slate-500 text-xs uppercase tracking-widest mb-8 font-semibold">Direct Contact</p>
+            <div class="space-y-5 mb-10">
+                <a href="tel:+971564165464" class="group inline-flex items-center gap-4 text-xl font-semibold hover:text-amber-400 transition-colors duration-300">
+                    <i class="fas fa-phone text-blue-400 text-2xl group-hover:text-amber-400 transition-colors"></i>
+                    <span class="tracking-wide">+971 56 416 5464</span>
+                </a>
+                <br/>
+                <a href="mailto:Sales@advsnt.com" class="group inline-flex items-center gap-4 text-xl font-semibold hover:text-amber-400 transition-colors duration-300">
+                    <i class="fas fa-envelope text-blue-400 text-2xl group-hover:text-amber-400 transition-colors"></i>
+                    <span class="tracking-wide">Sales@advsnt.com</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="divider-line w-24 mx-auto mb-16"></div>
+
+        <!-- Service Pillars - Refined -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-5">
+            <!-- Equipment Supply -->
+            <div class="service-pillar p-7 bg-slate-800/30 border border-slate-700 rounded-xl">
+                <div class="mb-4 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-500/10">
+                    <i class="fas fa-box text-blue-400 text-2xl"></i>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-300 leading-tight">Equipment Supply</p>
+            </div>
+            
+            <!-- Repair & Maintenance -->
+            <div class="service-pillar p-7 bg-slate-800/30 border border-slate-700 rounded-xl">
+                <div class="mb-4 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-500/10">
+                    <i class="fas fa-screwdriver-wrench text-blue-400 text-2xl"></i>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-300 leading-tight">Repair & Maintenance</p>
+            </div>
+            
+            <!-- Inspection & Testing -->
+            <div class="service-pillar p-7 bg-slate-800/30 border border-slate-700 rounded-xl">
+                <div class="mb-4 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-500/10">
+                    <i class="fas fa-microscope text-blue-400 text-2xl"></i>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-300 leading-tight">Inspection & Testing</p>
+            </div>
+            
+            <!-- Training & Support -->
+            <div class="service-pillar p-7 bg-slate-800/30 border border-slate-700 rounded-xl">
+                <div class="mb-4 h-12 w-12 flex items-center justify-center rounded-lg bg-blue-500/10">
+                    <i class="fas fa-graduation-cap text-blue-400 text-2xl"></i>
+                </div>
+                <p class="text-xs font-bold uppercase tracking-widest text-slate-300 leading-tight">Training & Support</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer - Technical & Minimal -->
+    <footer class="absolute bottom-8 text-slate-600 text-xs uppercase tracking-widest text-center px-6 font-medium">
+        Advanced Systems & Technologies LLC • UAE<br/>
+        <span class="text-slate-700">Precision. Reliability. Expertise.</span>
+    </footer>
+</body>
+</html>
